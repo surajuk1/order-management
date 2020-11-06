@@ -1,0 +1,9 @@
+{
+    "name": "VRO STORAGE",
+    "version": "1.0.0",
+    "description": "VRO STORAGE API URL : https://www.vrovault.com/vro_storage",
+  	"url" : "https://www.vrovault.com/vro_storage",
+    "template": {
+        "forceLanguage": "en"
+    }
+}

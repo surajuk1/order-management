@@ -1,0 +1,5 @@
+export const FETCH_CUSTOMERS = 'FETCH_CUSTOMERS';
+export const FETCH_PRODUCTS = 'FETCH_PRODUCTS';
+export const FETCH_ORDERS = 'FETCH_ORDERS';
+export const POST_ORDERS = 'POST_ORDERS';
+export const PUT_ORDERS = 'PUT_ORDERS';

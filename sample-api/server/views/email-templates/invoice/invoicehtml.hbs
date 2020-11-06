@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Invoice</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+  </head>
+
+ 
+
+  <body style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;background-color:#cccccc;" >
+
+    <div class="logo" style="width:113px;margin-top:0px;margin-bottom:25px;margin-right:auto;margin-left:auto;" ><img style="margin-top: 35px;" src="https://www.vrostorage.com/assets/img/invoice_logo.png" alt="Logo"></div>
+
+    <div class="inner" style="width:650px;height:auto;padding-top:40px;padding-bottom:40px;padding-right:40px;padding-left:40px;margin-top:0;margin-bottom:50px;margin-right:auto;margin-left:auto;background-color:#fff;" >
+
+      <header style="width:100%;padding-bottom:15px;float:left;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#dcdcdc;" >
+        <div class="lt" style="float:left;" >
+          <h1 style="font-family:'Roboto', sans-serif;font-size:36px;font-weight:700;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;color:#363636;" >Invoice</h1>
+          <p style="font-family:'Roboto', sans-serif;font-size:14px;color:#818181;padding-top:5px;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;line-height:18px;" >No: {{ref_id}}<br>
+          Date: {{date_from}}</p>
+        </div>
+      </header>
+
+      <div class="contact-sec" style="width:100%;float:left;padding-top:30px;padding-bottom:30px;padding-right:0;padding-left:0;" >
+        <div class="lt" style="float:left;" >
+          <h2 style="font-family:'Roboto', sans-serif;font-size:24px;font-weight:700;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;color:#363636;" >Billed From:</h2>
+          <p style="font-family:'Roboto', sans-serif;font-size:14px;color:#3a3535;padding-top:5px;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;line-height:20px;" >
+            VRO Storage <br>
+            <a href="https://www.vrostorage.com/#/paymentmail/{{ref_id}}">Click here to pay</a><br>
+          </p>
+        </div>
+
+        <div class="rt" style="float:right;text-align:right;" >
+          <h2 style="font-family:'Roboto', sans-serif;font-size:24px;font-weight:700;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;color:#363636;" >Billed To:</h2>
+          <p style="font-family:'Roboto', sans-serif;font-size:14px;color:#3a3535;padding-top:5px;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;line-height:20px;" ><span style="font-weight:700;" >Mr/Ms. {{full_name}}</span></p>
+          <p style="font-family:'Roboto', sans-serif;font-size:14px;color:#3a3535;padding-top:5px;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;line-height:20px;" >{{user_email}}</p>
+          
+        </div>
+
+      </div>
+
+      <div class="color-bg" style="width:550px;float:left;padding-top:30px;padding-bottom:30px;padding-right:50px;padding-left:50px;margin-left:-50px;background-color:#0cb9b5;" >
+        <div class="lt" style="float:left;" >
+          <h2 style="font-family:'Roboto', sans-serif;font-size:24px;font-weight:700;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;color:#fff;" >Mr/Ms. {{full_name}}</h2>
+          <p style="font-family:'Roboto', sans-serif;font-size:14px;padding-top:5px;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;line-height:20px;color:#fff;" >{{user_name}}</p>
+          <p style="font-family:'Roboto', sans-serif;font-size:14px;padding-top:5px;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;line-height:20px;color:#fff;" ><span style="font-weight:700;" >INVOICE NO: {{ref_id}}</span></p>
+        </div>
+        <div class="rt" style="float:right;text-align:right;" >
+          <p style="font-family:'Roboto', sans-serif;font-size:14px;padding-top:5px;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;line-height:20px;color:#fff;" ><span style="font-weight:700;" >Period</span></p>
+          <h2 style="font-family:'Roboto', sans-serif;font-size:24px;font-weight:700;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;color:#fff;" >Monthly</h2>
+          <p style="font-family:'Roboto', sans-serif;font-size:14px;padding-top:5px;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;line-height:20px;color:#fff;" ><span style="font-weight:700;" >{{date_from}} to {{date_to}}</span></p>
+        </div>
+      </div>
+
+      <div class="business-sec" style="width:100%;float:left;padding-top:46px;padding-bottom:20px;padding-right:0;padding-left:0;" >
+        <div class="lt" style="width:380px;float:left;" >
+          <h2 style="font-family:'Roboto', sans-serif;font-size:24px;font-weight:700;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;color:#363636;" >We appreciate your business.</h2>
+          <p style="font-family:'Roboto', sans-serif;font-size:14px;color:#3a3535;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;line-height:20px;padding-top:15px;" >Thank you for being our customer. If you have any questions, we're happy to help. Email us on <a href="#">info@vrostorage.com</a> and we'll be there for anything you need.</p>
+        </div>
+
+        <div class="icon-bg" style="width:121px;height:103px;float:right;margin-top:18px;border-radius:5px;background-color:#0cb9b5;background-image:none;background-repeat:repeat;background-position:top left;background-attachment:scroll;" ><img src="https://www.vrostorage.com/assets/img/invoice_icon.png" alt="Logo"></div>
+
+      </div>
+
+      <div class="summary-row" style="width:100%;font-size:24px;color:#363636;float:left;font-family:'Roboto', sans-serif;font-weight:700;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#dcdcdc;padding-bottom:20px;" >Invoice Summary</div>
+      <div class="project-row" style="width:100%;float:left;padding-top:20px;padding-bottom:20px;padding-right:0;padding-left:0;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#dcdcdc;" >
+        <div class="lt" style="float:left;" >
+          <p style="font-family:'Roboto', sans-serif;font-size:14px;color:#3a3535;padding-top:5px;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;line-height:20px;" >Usage : {{usage}}</p>
+          <p style="font-family:'Roboto', sans-serif;font-size:14px;color:#3a3535;padding-top:5px;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;line-height:20px;" >Extra Usage : {{extrausage}}</p>
+          <p style="font-family:'Roboto', sans-serif;font-size:14px;color:#3a3535;padding-top:5px;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;line-height:20px;" >Subscription Plan : <span style="font-weight:700;" >Premium</span></p>
+        </div>
+        <div class="rt" style="float:right;text-align:right;" >
+          <p style="font-family:'Roboto', sans-serif;font-size:14px;color:#3a3535;padding-top:5px;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;line-height:20px;" ><span style="font-weight:700;" >SAR {{amount}}</span></p>
+        </div>
+      </div>
+
+      <div class="project-row" style="width:100%;float:left;padding-top:20px;padding-bottom:20px;padding-right:0;padding-left:0;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#dcdcdc;" >
+        <div class="rt" style="float:right;text-align:right;" >
+          <p style="font-family:'Roboto', sans-serif;font-size:14px;color:#3a3535;padding-top:5px;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;line-height:20px;" >Total : <span style="font-weight:700;" >SAR {{amount}}</span></p>
+        </div>
+      </div>
+
+      <div class="footer" style="float:left;" >
+        <p style="font-family:'Roboto', sans-serif;font-size:14px;color:#a4a4a4;padding-top:15px;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;line-height:18px;" >Your bank may apply additional foreign transaction fees for processing your credit card payment which are out of our control. This service is supplied under the European Union's Reverse Charge rule.</p>
+      </div>
+
+      <br clear="all">
+    </div>
+
+
+  </body>
+</html>

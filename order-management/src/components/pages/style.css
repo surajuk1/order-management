@@ -1,0 +1,29 @@
+h1, p {
+  font-family: Lato;
+}
+
+body > div {
+  padding: 20px;
+}
+
+.table tr.visible.transition {
+  display: table-row !important;
+}
+.full-width {
+  padding-left: 10px !important;
+  width:100%;
+}
+.button-block{
+  padding-top: 20px;
+  text-align: end;
+}
+.search-block{
+  padding-top: 20px;
+  padding-left: 15px;
+}
+.col-block {
+  width:50%;
+}
+.ReactModal__Overlay {
+  background-color:rgb(0 0 0 / 75%) !important;
+}
